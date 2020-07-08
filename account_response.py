@@ -25,4 +25,4 @@ class Response:
         for _dic in self.dic:
             if _dic == text:
                 return self.dic[text]
-        return self.count
+        return str(self.count)
