@@ -14,10 +14,9 @@ from linebot.models import (
 )
 
 app = Flask(__name__)
------追加-----
+
 # インスタンス生成
 res = Response()
----ここまで---
 
 # Herokuの変数からトークンなどを取得
 channel_secret = os.environ['LINE_CHANNEL_SECRET']
@@ -61,4 +60,4 @@ def handle_message(event):
     )
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)))--> )
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
